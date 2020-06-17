@@ -11,7 +11,7 @@ export class PersonasComponent  {
      () => {
         this.agregarPersona = false;
      }
-   ,3000);
+   ,5000);
  }
 
  onCrearPersona(){
@@ -19,19 +19,16 @@ export class PersonasComponent  {
  }
 
  onModificarPersona(event: Event){
+   // En esta linea se hace un casting al "event.target" para los valores digitados por el teclado se soporten en el HTML
     this.tituloPersona = (<HTMLInputElement>event.target).value;
  }
-
 
    nombrePersona:string = 'William';
    apellidoPersona:string = 'Mosquera';
    edad:number = 30;
-   tituloPersona = 'Ingeniero';
+   tituloPersona = 'Ingeniero de Sistemas';
 
    agregarPersona:boolean = true;
    agregarPersonaStaus= "No se ha agregado ninguna persona";
-
-
-
 
 }

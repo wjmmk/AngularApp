@@ -14,7 +14,7 @@
    Edad: {{edad}}
 </h6>
 <hr>
-
+<!--
 <label>Titulo Persona</label>
 <input type="text" name="" id="" class="form-control"
        (input)="onModificarPersona($event)">
@@ -28,6 +28,7 @@
 
 <h3>{{ agregarPersonaStaus }}</h3>
 <hr>
+-->
 
 <!-- Esta es otra forma de Implementar en codigo anterio. -->
 
@@ -40,6 +41,9 @@
 <div class="col">
     <h1>Listado de Personas</h1>
     <button class="btn btn-primary" [disabled]=agregarPersona (click)="onCrearPersona()">Agregar Persona</button>
-</div>
+  </div>
 
 <h3>{{ agregarPersonaStaus }}</h3>
+<br>
+<h4>▼ En este apartado se esta accediendo a las propiedades del Componente Persona.</h4>
+<h6><app-persona></app-persona></h6>
